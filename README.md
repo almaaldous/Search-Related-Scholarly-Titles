@@ -1,12 +1,23 @@
 Search-Related-Scholarly-Titles
 ===============================
+Notice: if you are redirected from the web service site and want to report a bug please write an issue and explan the bug in details.
+
 
 The purpose of this web service is to help expanding the Humanitarian Computing Library: http://humanitariancomp.referata.com/wiki/Welcome, which is a (wiki-based) site dedicated for up to date publications in the feild of Humanitarian Computing. 
 
 Search-Related-Scholarly-Titles (SRST) is inspired by the python module created by Christian Kreibich project which is a module that implements a querier and parser for Google Scholar's output. 
 Find the original python script @ https://github.com/ckreibich/scholar.py
 
+I've posted this project here so I can more easily get any comments bug fixes. Also, I would love to recieve suggestions on the performnace and the response time for the web service.
 
+Thanks to all who will show interest to improve this web service. This web service will be made available online and people can use it to add new publication in the Library. 
+
+
+If you'd like to get in touch, email me at almaaldous@gmail.com or tweet me on Twitter @Ali__Khalil
+
+Regards, 
+Ali El Dous
+---------------------------------------------
 
 Features:
 
@@ -55,12 +66,4 @@ In both parts, you will see the titles related with the inserted keyword showed 
 
 
 
-I've posted this project here so I can more easily get any comments bug fixes. Also, I would love to recieve suggestions on the performnace and the response time for the web service.
 
-Thanks to all who will show interest to improve this web service. This web service will be made available online and people can use it to add new publication in the Library. 
-
-
-If you'd like to get in touch, email me at almaaldous@gmail.com or tweet me on Twitter @Ali__Khalil
-
-Regards, 
-Ali El Dous
