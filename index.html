@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <script src="js/libs/angular.js"></script>
+        <script src="js/libs/angular-route.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/PublicationsController.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/PublicationSearchByKeyword.js"></script>
+        <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body, form {
+                margin: 10px;
+            }
+
+            label {
+                width: 90px;
+            }
+            input, select {
+                width: 400px;
+            }
+            .ng-invalid.ng-dirty {
+                border-color: red;
+                outline-color: red;
+            }
+            .ng-valid.ng-dirty {
+                border-color: green;
+                outline-color: green;
+            }
+
+            table { border-collapse: collapse; }
+            .percent {
+                position: absolute; width: 300px; height: 14px; z-index: 1; text-align: center; font-size: 0.8em; color: white;
+            }
+            .progress-bar {
+                width: 300px; height: 14px;
+                border-radius: 10px;
+                border: 1px solid #CCC;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#6666cc), to(#4b4b95));
+                border-image: initial;
+            }
+            .uploaded {
+                padding: 0;
+                height: 14px;
+                border-radius: 10px;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#66cc00), to(#4b9500));
+                border-image: initial;
+            }
+            .dropbox {
+                width: 15em;
+                height: 3em;
+                border: 2px solid #DDD;
+                border-radius: 8px;
+                background-color: #FEFFEC;
+                text-align: center;
+                color: #BBB;
+                font-size: 2em;
+                font-family: Arial, sans-serif;
+            }
+            .dropbox span {
+                margin-top: 0.9em;
+                display: block;
+            }
+            .dropbox.not-available {
+                background-color: #F88;
+            }
+            .dropbox.over {
+                background-color: #bfb;
+            }
+            .line_break {
+                border: none;  // remove default style
+                border-bottom: 3px solid black;  //apply style
+            }
+        </style>
+        <title>Humanitarian Scholar</title>
+    </head>
+    <body>
+        <div style="alignment-adjust: central ">
+            <img  src="http://humanitariancomp.referata.com/w/skins/common/images/logos/HCL_155x155.png"
+                  alt="Humanitarian Computing Library">
+        </div>
+        <h2>Search Related Publication </h2>
+            <hr class="line_break">
+
+        <div ng-controller="PublicationsController">
+            <div id='partailsDiv' ng-view></div>
+        </div>
+
+        <div> 
+            <a target="_blank" class="btn btn-default" href="http://humanitariancomp.referata.com/wiki/Form:Publication">Add Publication [main Library Site]</a>
+        </div>
+        <div>
+            <a class="label label-danger" target="_blank" href="https://github.com/almaaldous/Search-Related-Scholarly-Titles/issues">Report an Issue</a>
+        </div>
+
+
+    </body>
+</html>
